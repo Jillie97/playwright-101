@@ -7,7 +7,7 @@ test('ผู้ใช้งานออกจากระบบได้สำ�
 
   const loginPage = new LoginPage(page);
   const homePage = new HomePage(page);
-  await page.goto('https://odds-playwright.vercel.app/');
+  await page.goto('/');
   await loginPage.fillInEmail('jill@odds.team');
   await loginPage.fillInPassword('12345678');
   await loginPage.clickButtonLogin();
@@ -22,7 +22,7 @@ test('ผู้ใช้งานเข้าสู่ระบบไม่ส�
 
   const loginPage = new LoginPage(page);
   const homePage = new HomePage(page);
-  await page.goto('https://odds-playwright.vercel.app/');
+  await page.goto('/');
   await loginPage.fillInEmail('jill@odds.team');
   await loginPage.fillInPassword('12345677');
   await loginPage.clickButtonLogin();
